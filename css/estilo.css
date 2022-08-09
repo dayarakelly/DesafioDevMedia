@@ -120,9 +120,9 @@ h3{
 }
 #menu-imagem-id{
 	padding:25px;
-	background:#F5F5F5;
-	height:100vw;
-	
+	background:#f1f1f1;
+/* 	height:100vw;
+	 */
 }
 .menu-img {
 	width:88%;
@@ -194,7 +194,7 @@ h3{
 .explore img{
 	width:100%;
 	max-height:300px;
-	height:auto;
+	/* height:auto; */
 	
 }
 .explore:hover{
@@ -208,7 +208,7 @@ h3{
 	background:white;
 }  
 .explores-legend-img{
-	padding:8px;
+	padding:10px;
 	margin:0px;
 	font-size:1.3em;
 
@@ -217,20 +217,20 @@ h3{
 	content:'txti';
 	color:white;
 }
-.extra{
-	height:100px;
+/* .extra{
+	height:350px;
 	background:#a5dd80;
 	width:200px;
 	margin:auto;
-}
+} */
 .price {
-	padding:8px;
+	padding:10px;
 	margin-top:5px;
 	color:#afafaf;
 }
 .description{
 	color:#717171;
-	padding:8px;
+	padding:10px;
 	margin-top:5px;
 }
 .explore-img a{
@@ -240,42 +240,145 @@ h3{
 .explore-img a:hover{
 	cursor:pointer;
 }
-/* .explore-img{
+.subscribe{
 	display:grid;
 	grid-template-columns:auto;
-	
-}.explore-img{
-	display:grid;
-	grid-template-columns:auto;
-	
-} */
-/*
+	width:88%;
+	margin:auto;
+	margin-top:3%;
+	color:#e6e6e6;
+	background:#626262;
+}
+.subscribe h2{
+	color:white;
+	font-size:1.4em;
+	margin-bottom:5px;
+	margin-top:10px;
+	padding:10px;
+	padding-top:25px;
+}
+.subscribe p, .subscribe-email{
+padding:10px;
+/* background:#25dd88; */
+margin-right:25px;	
+}
 
-	display:grid;
-	grid-template-columns:auto auto;	
-	grid-column-gap:15px;	
+.subscribe-email input{
+	width:100%;
+	margin: 0 auto;
+	margin-top:3px;
+	padding:11px;
+	border:none;
+	outline:none;
 }
-.explore-img{
+.subscribe-email input::placeholder{
+	color:#bababa;
+}
+.subscribe-email input[type="email"]{
+	font-size:1.0em;
+	color:#bababa;
+}
+.subscribe-button{
+	background:#f38981;
+	border:none;
+	padding:10px;
+	padding-left:18px;
+	padding-right:18px;
+	margin-left:8px;
+	margin-bottom:14px;
+	margin-top:7px;
+	color:white;
+	font-size:1.0em;
+	width:100px;
+}
+.subscribe-button:hover{
+	cursor:pointer;
+	box-shadow:inset 2px 2px 5px #d56f68;
+}
+.subscribe-button:focus{
+	box-shadow:inset 2px -3px 5px #c66861;
+}
+.contact{
 	display:grid;
 	grid-template-columns:auto;
-	grid-template-rows:200px;
+	width:88%;
+	margin:auto;
+	color:#3F3F3F;
+	margin-top:30px;
 }
- 
-.explore{
-	background-repeat:no-repeat;
-	background-size:cover;
-	
+.contact-data{
+	margin-top:25px;
+	margin-bottom:15px;
 }
-.explore-one{
-	background-image:url(../imagens/ocean.jpg);
-	background-position:center;	
-	height:auto;
-	object-fit:fill;
-	
+.fa-solid{
+	margin-bottom:10px;
 }
-.explore-two{
-	background-image:url(../imagens/mountains.jpg);
-	background-position:center;
-	height:auto;
-	object-fit:fill;	
-} */
+.contact h2{
+	font-size:1.4em;
+	margin-bottom:20px;
+}
+.contact-input{
+	margin-top:15px;
+	width:99%;
+	margin:auto;
+}
+.contact-input input{
+	width:100%;
+	margin: auto;
+	padding:13px 0px 13px 11px ;
+	border:none;
+	border:solid 1px #c2c1c1;
+	outline:none;
+	margin-bottom:15px;	
+}
+.contact-input input::placeholder{
+	color:#706e6e;
+}
+.contact-input input[type="email"],[type="text"]{
+	font-size:1.0em;
+	color:#706e6e;
+}
+.subscribe-button-send{
+	background:black;
+	border:none;
+	padding:13px;
+	margin-left:8px;
+	margin-bottom:14px;
+	margin-top:2px;
+	color:white;
+	font-size:1.0em;
+	width:175px;
+}
+.subscribe-button-send:hover{
+	cursor:pointer;
+	box-shadow:inset 2px 2px 5px #4e4e4e;
+}
+.subscribe-button-send:focus{
+	box-shadow:inset 2px -3px 5px #545353;
+}
+footer{
+	display:grid;
+	grid-template-columns:auto;
+	justify-content:center;
+	width:200px;
+	margin:auto;
+	color:#7e7e7e;
+}
+.find-us{
+	font-size:1.2em;
+	margin:auto;
+	margin-bottom:25px;
+}
+.fa-brands {
+	padding:2px;
+	font-size:1.1em;
+	 color:#666565;
+}
+ .creator{
+	 font-size:14px;
+	 margin:auto;
+	 margin-top:25px;
+ }
+ .creator a{
+	 color:#7e7e7e;
+ }
