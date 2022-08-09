@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Ubuntu', sans-serif;
+}
+header{
+	display:flex;
+	justify-content:space-between;
+	padding:10px;
+}
+.logo_style{
+	font-size:25px;
+	color:#f44336;
+	font-weight:bolder;
+}
+.fa-magnifying-glass{
+	font-size:25px;
+	color:gray;
+}
+main{
+	position:relative;/*antes estava absolute e as sections não apreciam, o main ficava acima delas*/
+	background-image:url(../imagens/london.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	width:100%;
+	height:550px;
+	
+}
+.div_form_um{
+		position:relative;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+		background:white;
+		width:65%;
+		padding-bottom:10px;
+}
+.titulos{
+	display:flex;
+	justify-content:space-around;
+}
+.titulos{
+	display:flex;
+	justify-content:space-around;
+	width:100%;
+	color:white;
+	background:black;
+	text-align:center;
+}
+.titulos p{
+	padding:8px;
+	width:100%;
+}
+.flight{
+	background:#f44336;
+}
+h1{
+	font-size:1.5em;
+}
+h2{
+	font-size:1.3em;
+	margin-bottom:14px;
+	color:#3F3F3F;
+}
+h3{
+	font-size:0.9em;
+	margin-bottom:12px;
+	color:#3F3F3F;
+}
+.travel-world{
+	margin:4px;
+	margin-top:14px;
+	padding:10px;
+	padding-bottom:0;
+	color:#3F3F3F;
+}
+.form-itens{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	margin-top:15px;
+
+}
+.form-item{
+	width:100%;
+	margin-right:8px;
+}
+.form-item-um{
+	margin-left:4px;
+	padding-left:10px;
+}
+.form-item-dois{
+	margin-right:4px;
+	padding-right:10px;
+}
+.form-item input{
+	width:95%;
+	font-size:1em;
+	height:30px;
+	border:solid 1px #afafaf;
+	padding:5px;
+	padding-left:7px;
+	margin-top:4px;
+	outline:none;
+}
+.form-item-btn{
+	margin:15px 0px 20px 15px;
+}
+.form-item-btn button{
+	font-size:1em;
+	padding:11px;
+	border:none;
+	background:#696969;
+	color:white;
+}
+.form-item-btn button:hover{
+	cursor:pointer;
+}
+#menu-imagem-id{
+	padding:25px;
+	background:#F5F5F5;
+	height:100vw;
+	
+}
+.menu-img {
+	width:88%;
+	margin:auto;
+	
+}
+.offer:hover{
+	transform:scale(1.03);
+	transition:transform 50ms;
+	cursor:pointer;
+}
+/*  .offer span{
+	 color:blue;
+	position:relative;
+	top:-10%;
+	left:6%;
+}
+.offer-one span{
+	top:-10%;
+	left:3%;
+}  */
+#offer-id{
+	color:white;
+	display:grid;
+	/* grid-template-columns:50% 23% 23%; */
+	/* grid-template-columns:minmax(49%,auto) minmax(23%, auto) minmax(23%, auto); */
+	 grid-template-columns:49.5% auto auto;
+	grid-template-rows:auto auto;
+	grid-gap:15px 15px;
+}
+.offer img{
+	width:100%;
+}
+
+.offer-one{
+	grid-row:1/2 span;
+	}
+
+.explores{
+	margin-top:30px;
+}
+.offer{
+	position:relative;
+}
+.legenda-offers{
+	position:absolute;
+	top:83%;
+	left:6%;
+	transform:translate(2%, 10%);
+}
+.legenda-offers-one{
+	position:absolute;
+	top:92%;
+	left:3%;
+}
+
+#explore-id{
+	display:grid;
+	grid-template-columns:auto auto;
+	grid-template-rows:auto auto;
+	grid-column-gap:15px;
+}
+.explore-img{
+	display:grid;
+	grid-template-columns:auto;
+	grid-template-rows:auto;
+	
+}
+.explore img{
+	width:100%;
+	max-height:300px;
+	height:auto;
+	
+}
+.explore:hover{
+	cursor:pointer;
+	transform:scale(1.03);
+	transition:transform 50ms;
+}
+
+ .explore-img{
+	/* background:lightblue; */
+	background:white;
+}  
+.explores-legend-img{
+	padding:8px;
+	margin:0px;
+	font-size:1.3em;
+
+}
+.legenda-explores-one p::after{
+	content:'txti';
+	color:white;
+}
+.extra{
+	height:100px;
+	background:#a5dd80;
+	width:200px;
+	margin:auto;
+}
+.price {
+	padding:8px;
+	margin-top:5px;
+	color:#afafaf;
+}
+.description{
+	color:#717171;
+	padding:8px;
+	margin-top:5px;
+}
+.explore-img a{
+	padding:15px;
+	color:#717171;
+}
+.explore-img a:hover{
+	cursor:pointer;
+}
+/* .explore-img{
+	display:grid;
+	grid-template-columns:auto;
+	
+}.explore-img{
+	display:grid;
+	grid-template-columns:auto;
+	
+} */
+/*
+
+	display:grid;
+	grid-template-columns:auto auto;	
+	grid-column-gap:15px;	
+}
+.explore-img{
+	display:grid;
+	grid-template-columns:auto;
+	grid-template-rows:200px;
+}
+ 
+.explore{
+	background-repeat:no-repeat;
+	background-size:cover;
+	
+}
+.explore-one{
+	background-image:url(../imagens/ocean.jpg);
+	background-position:center;	
+	height:auto;
+	object-fit:fill;
+	
+}
+.explore-two{
+	background-image:url(../imagens/mountains.jpg);
+	background-position:center;
+	height:auto;
+	object-fit:fill;	
+} */
