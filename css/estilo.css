@@ -19,14 +19,13 @@ header{
 	color:gray;
 }
 main{
-	position:relative;/*antes estava absolute e as sections não apreciam, o main ficava acima delas*/
+	position:relative;
 	background-image:url(../imagens/london.jpg);
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-size:cover;
 	width:100%;
-	height:550px;
-	
+	height:550px;	
 }
 .div_form_um{
 		position:relative;
@@ -121,42 +120,26 @@ h3{
 #menu-imagem-id{
 	padding:25px;
 	background:#f1f1f1;
-/* 	height:100vw;
-	 */
 }
 .menu-img {
 	width:88%;
 	margin:auto;
-	
 }
 .offer:hover{
 	transform:scale(1.03);
 	transition:transform 50ms;
 	cursor:pointer;
 }
-/*  .offer span{
-	 color:blue;
-	position:relative;
-	top:-10%;
-	left:6%;
-}
-.offer-one span{
-	top:-10%;
-	left:3%;
-}  */
 #offer-id{
 	color:white;
 	display:grid;
-	/* grid-template-columns:50% 23% 23%; */
-	/* grid-template-columns:minmax(49%,auto) minmax(23%, auto) minmax(23%, auto); */
-	 grid-template-columns:49.5% auto auto;
+	grid-template-columns:49.5% auto auto;
 	grid-template-rows:auto auto;
 	grid-gap:15px 15px;
 }
 .offer img{
 	width:100%;
 }
-
 .offer-one{
 	grid-row:1/2 span;
 	}
@@ -194,35 +177,24 @@ h3{
 .explore img{
 	width:100%;
 	max-height:300px;
-	/* height:auto; */
-	
 }
 .explore:hover{
 	cursor:pointer;
 	transform:scale(1.03);
 	transition:transform 50ms;
 }
-
  .explore-img{
-	/* background:lightblue; */
 	background:white;
 }  
 .explores-legend-img{
 	padding:10px;
 	margin:0px;
 	font-size:1.3em;
-
 }
 .legenda-explores-one p::after{
 	content:'txti';
 	color:white;
 }
-/* .extra{
-	height:350px;
-	background:#a5dd80;
-	width:200px;
-	margin:auto;
-} */
 .price {
 	padding:10px;
 	margin-top:5px;
@@ -259,10 +231,8 @@ h3{
 }
 .subscribe p, .subscribe-email{
 padding:10px;
-/* background:#25dd88; */
 margin-right:25px;	
 }
-
 .subscribe-email input{
 	width:100%;
 	margin: 0 auto;
@@ -382,3 +352,128 @@ footer{
  .creator a{
 	 color:#7e7e7e;
  }
+ @media (max-width:1030px){
+	.legenda-offers{
+	position:absolute;
+	top:83%;
+	left:6%;
+	transform:translate(3%, 4%);
+}
+
+ }
+  @media (max-width:1005px){
+	.legenda-offers{
+	position:absolute;
+	top:83%;
+	left:6%;
+	transform:translate(2%, -25%);
+	font-size:1em;
+}  
+	.legenda-offers-one{
+	position:absolute;
+	top:90%;
+	left:3%;
+}
+  }
+  
+  
+@media (max-width:768px){
+#offer-id{
+	grid-gap:10px 10px;
+}
+#explore-id{
+	grid-column-gap:10px;
+}
+.menu-img {
+	width:96%;
+	padding-top:25px;
+}
+#menu-imagem-id{
+	width:100%;
+	padding:0;	
+}
+.form-item{
+margin-right:12px;
+}
+.legenda-offers-one{
+	position:absolute;
+	top:85%;
+	left:3%;
+}
+}
+    @media (max-width:630px){
+	.legenda-offers{
+	position:absolute;
+	top:83%;
+	left:6%;
+	transform:translate(2%, -45%);
+	font-size:0.8em;
+}  
+	.legenda-offers-one{
+	position:absolute;
+	font-size:0.9em;
+	top:86%;
+	left:3%;
+}
+}
+
+	@media (max-width:450px){
+	.form-itens{
+		flex-wrap:wrap;
+}
+	.form-item-dois{
+	margin-left:4px;
+	padding-left:10px;
+}	
+	.legenda-offers,.legenda-offers-one{
+	position:absolute;
+	top:83%;
+	left:6%;
+	transform:translate(2%, 30%);
+	font-size:1em;
+} 
+	.offer{
+		font-size:1.3em;
+}
+	#offer-id{	
+	grid-template-columns:auto;
+	grid-column-gap:15px;	
+}
+	#explore-id{
+	display:grid;
+	grid-template-columns:auto;
+	grid-column-gap:15px;
+}
+	.explores-legend-img{
+	padding:10px;
+	margin:0px;
+	font-size:1em;
+}
+}  
+ @media (max-width:350px){
+	.legenda-offers,.legenda-offers-one{
+	position:absolute;
+	top:83%;
+	left:6%;
+	transform:translate(2%, 30%);
+	font-size:1em;
+}
+} 
+ @media (max-width:300px){
+	.legenda-offers,.legenda-offers-one{
+	position:absolute;
+	top:82%;
+	left:6%;
+	transform:translate(2%, 30%);
+	font-size:0.9em;
+}
+}
+ @media (max-width:270px){
+	.legenda-offers,.legenda-offers-one{
+	position:absolute;
+	top:75%;
+	left:6%;
+	transform:translate(2%, 10%);
+	font-size:0.8em;
+}
+}
